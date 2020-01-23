@@ -43,6 +43,34 @@
             "required": true
         },
         {
+            "displayName": "DB hostname",
+            "description": "DB hostname",
+            "name": "DB_ADDR",
+            "value": "",
+            "required": true
+        },
+        {
+            "displayName": "DB name",
+            "description": "DB name",
+            "name": "DB_DATABASE",
+            "value": "keycloak",
+            "required": true
+        },
+        {
+            "displayName": "DB user",
+            "description": "DB user",
+            "name": "DB_USER",
+            "value": "",
+            "required": true
+        },
+        {
+            "displayName": "DB password",
+            "description": "DB password",
+            "name": "DB_PASSWORD",
+            "value": "",
+            "required": true
+        },
+        {
             "displayName": "Custom http Route Hostname",
             "description": "Custom hostname for http service route. Leave blank for default hostname, e.g.: <application-name>.<project>.<default-domain-suffix>",
             "name": "HOSTNAME_HTTP",
@@ -232,6 +260,22 @@
                                     {
                                         "name": "DB_VENDOR",
                                         "value": "${DB_VENDOR}"
+                                    },
+                                    {
+                                        "name": "DB_ADDR",
+                                        "value": "${DB_ADDR}"
+                                    },
+                                    {
+                                        "name": "DB_DATABASE",
+                                        "value": "${DB_DATABASE}"
+                                    },
+                                    {
+                                        "name": "DB_USER",
+                                        "value": "${DB_USER}"
+                                    },
+                                    {
+                                        "name": "DB_PASSWORD",
+                                        "value": "${DB_PASSWORD}"
                                     },
                                     {
                                         "name": "JGROUPS_DISCOVERY_PROTOCOL",
